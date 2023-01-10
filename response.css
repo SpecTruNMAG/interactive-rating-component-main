@@ -1,0 +1,94 @@
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --orange: hsl(25, 97%, 53%);
+  /*### Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --white-smoke: hsl(41, 96%, 89%);
+  --Light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --mediun-dak-blue: hsl(215, 23%, 13%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 1440px;
+  max-height: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 415px;
+  max-height: 415px;
+  min-width: 325px;
+  margin: 2.4rem;
+  background-color: var(--mediun-dak-blue);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon > img {
+  width: 90%;
+  height: auto;
+}
+
+.container > .seleccionado {
+  background-color: var(--dark-blue);
+  color: var(--orange);
+  padding: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-top: 1rem;
+}
+.container > .seleccionado > p,
+span {
+  font-size: 1.4rem;
+}
+.container > h1 {
+  padding-top: 0.5rem;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.container > p {
+  color: var(--medium-grey);
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    font-size: 70%;
+  }
+}

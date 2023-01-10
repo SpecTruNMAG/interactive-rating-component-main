@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <section class="main-container">
+      <main class="container">
+        <div class="icon">
+          <img src="./images/icon-star.svg" alt="" />
+        </div>
+
+        <h1 id="titulo">How did we do?</h1>
+
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+
+        <form
+          action="./response.html"
+          method="get"
+          class="container-form"
+          id="formulario"
+        >
+          <div class="options">
+            <input
+              type="radio"
+              name="opcion"
+              id="opcion1"
+              value="1"
+              class="option"
+            />
+            <label for="opcion1" class="label-option" id="lbl-option1">1</label>
+
+            <input
+              type="radio"
+              name="opcion"
+              id="opcion2"
+              value="2"
+              class="option"
+            />
+            <label for="opcion2" class="label-option" id="lbl-option2">
+              2</label
+            >
+
+            <input
+              type="radio"
+              name="opcion"
+              id="opcion3"
+              value="3"
+              class="option"
+            />
+            <label for="opcion3" class="label-option" id="lbl-option3">
+              3</label
+            >
+
+            <input
+              type="radio"
+              name="opcion"
+              id="opcion4"
+              value="4"
+              class="option"
+            />
+            <label for="opcion4" class="label-option" id="lbl-option4">
+              4</label
+            >
+
+            <input
+              type="radio"
+              name="opcion"
+              id="opcion5"
+              value="5"
+              class="option"
+            />
+            <label for="opcion5" class="label-option" id="lbl-option5">
+              5</label
+            >
+          </div>
+
+          <button class="container-submit" type="submit" href="./response.html">
+            SUBMIT
+          </button>
+        </form>
+      </main>
+    </section>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>

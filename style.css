@@ -1,0 +1,150 @@
+:root {
+  /*## Colors*/
+  /*### Primary*/
+  --orange: hsl(25, 97%, 53%);
+  /*### Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --white-smoke: hsl(41, 96%, 89%);
+  --Light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --mediun-dak-blue: hsl(215, 23%, 13%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --width: 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 1440px;
+  max-height: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 415px;
+  max-height: 415px;
+  min-width: 325px;
+  margin: 2.4rem;
+  background-color: var(--mediun-dak-blue);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  padding-bottom: 3.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3rem;
+  background-color: var(--dark-blue);
+}
+.icon > img {
+  width: 35%;
+}
+
+.container > h1 {
+  padding-top: 0.5rem;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.container > p {
+  color: var(--medium-grey);
+  line-height: 2.2rem;
+  font-size: 1.4rem;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-form > .options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-form > .options > .label-option {
+  display: flex;
+  background-color: var(--dark-blue);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--medium-grey);
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+
+.container-form > .options > .label-option:hover {
+  background-color: var(--medium-grey);
+  color: var(--white-smoke);
+}
+
+.container-form > .options > .label-option:active {
+  background-color: var(--orange);
+  color: var(--white-smoke);
+}
+
+.container-form > .options > .label-option:checked {
+  background-color: black;
+}
+
+.container-form > .options > .option {
+  display: none;
+}
+
+.container-form > .container-submit {
+  padding: 1.3rem;
+  border-radius: 2.5rem;
+  background-color: var(--orange);
+  border: none;
+  color: var(--white-smoke);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form > .container-submit:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    font-size: 70%;
+  }
+  .container-form > .options > .label-option {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 2.2rem;
+  }
+}
